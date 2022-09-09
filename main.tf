@@ -71,6 +71,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   location            = azurerm_resource_group.example.location
   size                = "Standard_F2"
   admin_username      = "fkadmin"
+  admin_password      = "Passw0rd@"
   disable_password_authentication     = "false"
   network_interface_ids = [
     azurerm_network_interface.example.id,
